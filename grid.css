@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,800;0,6..96,900;1,6..96,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,800;0,6..96,900;1,6..96,700&display=swap");
+
+body {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2rem;
+}
+
+.item1 {
+  background-image: url("https://media.istockphoto.com/id/1307291479/photo/two-rothschilds-giraffes-in-northern-uganda.jpg?b=1&s=170667a&w=0&k=20&c=HjLY6xyES1MuugL4sodGEjun8UFHyzsmcpvwXLCRzas=");
+}
+
+.item2 {
+  background-image: url("https://images.unsplash.com/photo-1541959833400-049d37f98ccd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8anVuZ2xlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.item3 {
+  background-image: url("https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+}
+
+.item4 {
+  background-image: url("https://images.unsplash.com/photo-1455577380025-4321f1e1dca7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cml2ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+}
+.item5 {
+  background-image: url("https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bG92ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.item6 {
+  background-image: url("https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGdpcmxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+.item7 {
+  background-image: url("https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(to right, #041308, #0b3317);
+}
+
+.left-text {
+  flex-basis: 30%;
+}
+
+.gallery {
+  flex-basis: 50%;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: 2px solid green;
+}
+
+p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.gallery {
+  flex-basis: 50%;
+  display: grid;
+  gap: 9px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  grid-auto-flow: dense;
+  border: 3px solid whitesmoke;
+}
+.box {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  background-blend-mode: hard-light;
+  transition: all 1s ease-in-out;
+}
+
+.row2 {
+  grid-row: span 2;
+}
+.col2 {
+  grid-column: span 2;
+}
+
+.box:hover {
+  background-color: #999;
+  background-position: center;
+  box-shadow: 0 0 5px #fff;
+  cursor: pointer;
+}
